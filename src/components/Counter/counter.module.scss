@@ -1,0 +1,10 @@
+.container {
+    border: 1px solid $soft-tone;
+    h1 {
+        color: $soft-tone;
+        @include desktop {
+            font-size: 3rem;
+            color: blue;
+        }
+    }
+}

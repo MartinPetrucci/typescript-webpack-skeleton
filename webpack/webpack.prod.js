@@ -6,7 +6,7 @@ module.exports = {
   plugins: [
     new webpack.DefinePlugin({
       'process.env.name': JSON.stringify('Production'),
-      'process.env.api_key': JSON.stringify('9874kfkfkf')
-    }),
+      'process.env.api_key': JSON.stringify('9874kfkfkf'),
+    })
   ],
 }

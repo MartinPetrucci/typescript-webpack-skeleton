@@ -1,0 +1,11 @@
+@import './mixin.scss';
+@import './variables.scss';
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+h1 {
+    font-size: 1.5rem;
+    color: $soft-tone;
+}
