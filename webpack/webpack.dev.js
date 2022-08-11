@@ -12,6 +12,7 @@ module.exports = {
     new ReactRefreshWebpackPlugin(),
     new webpack.DefinePlugin({
       'process.env.name': JSON.stringify('Development'),
+      'process.env.api_key': JSON.stringify('asdasd123')
     }),
   ],
 }
