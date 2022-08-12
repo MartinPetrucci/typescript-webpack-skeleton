@@ -5,7 +5,20 @@
   box-sizing: border-box;
 }
 
-h1 {
-    font-size: 1.5rem;
-    color: $soft-tone;
+html, body, #root {
+  margin: 0;
+  padding: 0;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  max-width: $content-max-width;
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  padding: 0 1rem;
 }

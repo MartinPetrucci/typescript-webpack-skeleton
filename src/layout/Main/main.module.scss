@@ -1,0 +1,11 @@
+.main {
+    min-height: 100vh;
+    background-color: $main-background-color;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    margin-top: 2rem;
+}

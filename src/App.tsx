@@ -1,18 +1,14 @@
-import './styles.css'
-import IMAGE from './fondo.jpeg'
-import { Counter } from './components/Counter/Counter'
 import './styles/global.scss'
+import { Footer } from './layout/Footer/Footer'
+import { Header } from './layout/Header/Header'
+import { Main } from './layout/Main/Main'
 
 export const App = () => {
   return (
-    <div>
-      <h1>
-        Edited!! React Typescript App - {process.env.NODE_ENV} {process.env.name}{' '}
-      </h1>
-      <span>API KEY: {process.env.api_key}</span>
-      <br />
-      <img src={IMAGE} alt="bariloche" width="500px" height="300px" />
-      <Counter />
+    <div className='layout'>
+      <Header/>
+      <Main/>
+      <Footer/>
     </div>
   )
 }

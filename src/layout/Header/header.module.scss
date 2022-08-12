@@ -1,0 +1,29 @@
+.header {
+    background-color: $header-background-color;
+    height: 60px;
+    width: 100%;
+
+    .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 0 1rem 0.5rem 1rem;
+    }
+
+    .brand-name {
+        margin: 0;
+        font-size: 2rem;
+        color: white;
+        font-family: $default-font;
+    }
+
+    .actions {
+        button {
+            background-color: transparent;
+            border: 1px solid;
+            border-radius: 5px;
+            font-family: $default-font;
+            color: white;
+        }        
+    }
+}
