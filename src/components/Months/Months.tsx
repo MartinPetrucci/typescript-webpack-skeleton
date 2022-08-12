@@ -1,3 +1,4 @@
+import { useMovements } from '../../services/queries'
 import styles from './months.module.scss'
 
 const Month = () => {
@@ -14,6 +15,14 @@ const Month = () => {
 
 
 export const Months = () => {
+
+  const {data, isFetching, movements} = useMovements()
+  console.log('movements desde Months', movements)
+
+  if(isFetching) {
+    return <h1>Fetching...</h1>
+  }
+
   return (
     <div className={styles.months}>
         <Month />
