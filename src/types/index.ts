@@ -1,10 +1,32 @@
 //Responses
-interface Response {
+export interface BaseResponse {
   statusCode: number;
   statusText: string;
 }
 
-export interface MovementResponse extends Response {
+export interface LoginResponse extends BaseResponse {
+    data: {
+        authToken: string;
+        username: string;
+        fullName: string;
+        userId: string;
+        email: string;
+    }
+}
+
+export interface LoginBody {
+    username: string;
+    password: string;
+}
+
+export interface RegisterBody {
+    username: string;
+    password: string;
+    fullName: string;
+    email: string;
+}
+
+export interface MovementsResponse extends BaseResponse {
   data: Movement[];
 }
 
