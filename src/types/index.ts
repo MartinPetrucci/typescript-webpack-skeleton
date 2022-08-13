@@ -5,25 +5,25 @@ export interface BaseResponse {
 }
 
 export interface LoginResponse extends BaseResponse {
-    data: {
-        authToken: string;
-        username: string;
-        fullName: string;
-        userId: string;
-        email: string;
-    }
+  data: {
+    authToken: string;
+    username: string;
+    fullName: string;
+    userId: string;
+    email: string;
+  };
 }
 
 export interface LoginBody {
-    username: string;
-    password: string;
+  username: string;
+  password: string;
 }
 
 export interface RegisterBody {
-    username: string;
-    password: string;
-    fullName: string;
-    email: string;
+  username: string;
+  password: string;
+  fullName: string;
+  email: string;
 }
 
 export interface MovementsResponse extends BaseResponse {
@@ -32,10 +32,29 @@ export interface MovementsResponse extends BaseResponse {
 
 export interface Movement {
   id: number;
-  concept: concepts;
+  movementType: movementType;
+  amount: number;
+  date: string;
+  concept: string;
 }
 
-export enum concepts {
+export interface TotalBalanceResponse {
+    total: Balance;
+    monthsBalance: MonthlyBalance[]
+}
+
+export interface Balance {
+  balance: number;
+  incomes: number;
+  expenses: number;
+}
+
+export interface MonthlyBalance extends Balance {
+  since: string;
+  until: string;
+}
+
+export enum movementType {
   INCOME = "INCOME",
   EXPENSE = "EXPENSE",
 }

@@ -22,9 +22,9 @@ module.exports = {
     "plugin:import/errors",
     "plugin:import/warnings",
     "plugin:import/typescript",
-    "plugin:jsx-a11y/recommended",
+    // "plugin:jsx-a11y/recommended",
     "plugin:eslint-comments/recommended",
-    // "prettier",
+    "prettier",
     // "plugin:prettier/recommended",
   ],
   rules: {
